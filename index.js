@@ -9,8 +9,3 @@ app.listen(process.env.RUNNING_PORT, function (){
 
 // app.listen(9000, function () {
 //     console.log("Server is running");
-
-// })
-// app.listen(9000,function(){
-//     console.log('Server started to listen at 9000');
-// })
