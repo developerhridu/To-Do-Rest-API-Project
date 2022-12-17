@@ -12,7 +12,11 @@ router.post("/UpdateProfile",AuthVerifyMiddleware,ProfileController.UpdateProfil
 
 router.post("/CreateToDo",AuthVerifyMiddleware,ToDoListController.CreateToDo);
 router.get("/SelectToDo",AuthVerifyMiddleware,ToDoListController.SelectToDo);
-router.get("/UpdateToDo",AuthVerifyMiddleware,ToDoListController.UpdateToDo);
+router.post("/UpdateToDo",AuthVerifyMiddleware,ToDoListController.UpdateToDo);
+router.post("/UpdateToDo",AuthVerifyMiddleware,ToDoListController.UpdateToDo);
+router.post("/RemoveToDo",AuthVerifyMiddleware,ToDoListController.RemoveToDo);
+router.post("/SelectToDoByStatus",AuthVerifyMiddleware,ToDoListController.SelectToDoByStatus);
+router.post("/SelectToDoByDate",AuthVerifyMiddleware,ToDoListController.SelectToDoByDate);
 
 module.exports = router;
 
