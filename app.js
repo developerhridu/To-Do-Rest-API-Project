@@ -34,7 +34,7 @@ app.use(limiter)
 // MongoDB Connection
 // let URI = "mongodb+srv://mrhridu:hridu2277@cluster0.wdge2vt.mongodb.net/?retryWrites=true&w=majority/ToDO";
 let URI = "mongodb://127.0.0.1:27017/ToDo";
-let OPTION = {user: '', pass: ''}
+let OPTION = {user: '', pass: '', autoIndex: true}
 mongoose.connect(URI, OPTION, (error) => {
     if(error){
         console.log(error);
