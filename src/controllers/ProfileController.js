@@ -11,3 +11,8 @@ exports.CreateProfile=(req,res)=>{
         }
     })
 }
+// exports.CreateProfile=(req,res)=>{
+//
+//             res.status(200).json({status:"success"})
+//
+// }

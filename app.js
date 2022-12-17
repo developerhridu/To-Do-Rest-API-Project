@@ -45,11 +45,11 @@ mongoose.connect(URI, OPTION, (error) => {
 })
 
 // Routing implement
-app.use("api/v1", router);
+app.use("/api/v1", router);
 
 //undefined router implement
-app.use("*",(req, res)=>{
-    res.status(404).json({status:"Fail", data: "Not Found"})
+app.use('*', (req, res) => {
+    res.status(404).json({status: 'Failed to find route', Data: 'Not Found'});
 })
 
 module.exports = app;
